@@ -79,6 +79,7 @@
 
             <div id="page">
                 <div id="sidebar">
+                    
                     <div id="box2">
                         <h3>CUENTOS</h3>
                     </div>
