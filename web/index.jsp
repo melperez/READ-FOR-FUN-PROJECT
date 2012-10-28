@@ -4,7 +4,7 @@
 --%>
 <%
     String modIni = "class='first current_page_item'";
-    String modCuentos = "", modPadres = "", modLogico = "", modContacto = "class ='last'";
+    String modCuentos = "", modRegistrar = "", modLogico = "", modContacto = "class ='last'";
     String modulo = (String) request.getAttribute("titulo");
     if (modulo == null) {
         modulo = "Inicio";
@@ -19,25 +19,25 @@
         <%
             if (modulo.equals("Cuentos")) {
                 modIni = "";
-                modPadres = "";
+                modRegistrar = "";
                 modLogico = "";
                 modContacto = "class ='last'";
                 modCuentos = "class='first current_page_item'";
             } else if (modulo.equals("Logico")) {
                 modIni = "";
-                modPadres = "";
+                modRegistrar = "";
                 modCuentos = "";
                 modContacto = "class ='last'";
                 modLogico = "class='first current_page_item'";
-            } else if (modulo.equals("Padres")) {
+            } else if (modulo.equals("Registrate")) {
                 modIni = "";
                 modCuentos = "";
                 modLogico = "";
                 modContacto = "class ='last'";
-                modPadres = "class='first current_page_item'";;
+                modRegistrar = "class='first current_page_item'";;
             } else if (modulo.equals("Contacto")) {
                 modIni = "";
-                modPadres = "";
+                modRegistrar = "";
                 modLogico = "";
                 modCuentos = "";
                 modContacto = "class='last current_page_item'";
@@ -62,7 +62,7 @@
                         <li <%=modIni%>><a href="ControladorPages?accion=modhome">Inicio</a></li>
                         <li <%=modCuentos%>><a href="ControladorPages?accion=modcuentos">Lecturas</a></li>
                         <li <%=modLogico%>><a href="ControladorPages?accion=modmath">L&oacutegica</a></li>
-                        <li <%=modPadres%>><a href="ControladorPages?accion=modpadres">Padres</a></li>
+                        <li <%=modRegistrar%>><a href="ControladorPages?accion=modregistrar">Registro</a></li>
                         <li <%=modContacto%>><a href="ControladorPages?accion=modcontacto">Contacto</a></li>
                     </ul>
 

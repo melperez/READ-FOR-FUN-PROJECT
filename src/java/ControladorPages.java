@@ -42,8 +42,8 @@ public class ControladorPages extends HttpServlet {
             modulo = "Cuentos";
         } else if (accion.equals("modmath")) {
             modulo = "Logico";
-        } else if (accion.equals("modpadres")) {
-            modulo = "Padres";
+        } else if (accion.equals("modregistrar")) {
+            modulo = "Registro";
         } else if (accion.equals("modcontacto")) {
             modulo = "Contacto";
         } else if (accion.equals("modjuegos")) {
