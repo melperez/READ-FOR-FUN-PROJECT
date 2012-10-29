@@ -16,6 +16,7 @@
     <head>
         <meta name="description" content="" />
         <meta name="keywords" content="" />
+        <link rel="shorcut icon" href="images/RFF.ico" type="image/x-icon">
         <%
             if (modulo.equals("Cuentos")) {
                 modIni = "";
@@ -51,12 +52,33 @@
 
         <img style="z-index: 100" class="log" alt="Read For Fun" src='images/logo_120.png'/>       
 
+             <div id="menuhoriz" style="border-color:black;">
 
-        <div id="wrapper">
+                       <a href="ControladorPages?accion=modhome">
+                                <img class="icon" style="z-index: 100;" class="log" alt="Read For Fun" src='images/computer-icon.png'/> 
+                            </a>
+                       <a href="ControladorPages?accion=modcuentos">
+                                <img class="icon" style="z-index: 100" class="log" alt="Read For Fun" src='images/folder-font-icon.png'/> 
+                            </a>
+                       <a href="ControladorPages?accion=modmath">
+                                <img class="icon" style="z-index: 100" class="log" alt="Read For Fun" src='images/logico.png'/> 
+                            </a>
+                       <a href="ControladorPages?accion=modregistrar">
+                                <img class="icon" style="z-index: 100;" class="log" alt="Read For Fun" src='images/folder-document-icon.png'/> 
+                            </a>
+                        <a href="ControladorPages?accion=modcontacto">
+                                <img class="icon" style="z-index: 100;" class="log" alt="Read For Fun" src='images/search-icon.png'/> 
+                            </a>
+                   
+                    <br class="clearfix" />
+                </div>
+
+        <div id="wrapper" >
+            
             <div id="header" >
 
 
-                <div id="menu" style="border-color:black">
+                <div id="menu" style="border-color:black;">
 
                     <ul style="position:relative; z-index: 4">
                         <li <%=modIni%>><a href="ControladorPages?accion=modhome">Inicio</a></li>

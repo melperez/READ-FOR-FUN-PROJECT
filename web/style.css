@@ -10,73 +10,79 @@ Released   : 20120208
 */
 
 * {
-	margin: 0%;
-	padding: 0%;
+    margin: 0%;
+    padding: 0%;
 }
 
 a {
-	color: #1D68AB;
-	text-decoration: none;
+    color: #1D68AB;
+    text-decoration: none;
+    position:relative;
+    z-index: 30
 }
 
 a:hover{
-	text-decoration: overline;
-        
+    text-decoration: overline;
+position:relative;
+    z-index: 30
 }
 
 html {
-	background: #CFD5DE url(images/img01.jpg) top left repeat-x;
+    background: #CFD5DE url(images/fondo.png) top left repeat-x;
 }
 
 body {
-	background: url(images/fondo.png) fixed;
-        background-size: 100% 100%;
-	color: #6B7C93;
-	font-size: 130%;
-        
+    background: url(images/fondo.png) fixed;
+    background-size: 100% 100%;
+    color: #6B7C93;
+    font-size: 130%;
+
+}
+#bodyini{
+    background: none;
 }
 
 body,input {
-	font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 br.clearfix {
-	clear: both;
+    clear: both;
 }
 
 strong {
-	color: #333333;
+    color: #333333;
 }
 
 h1,h2,h3,h4 {
-	text-transform: lowercase;
-	text-shadow: 0 2px 2px #000000;
+    text-transform: none;
+    text-shadow: 0 2px 2px #000000;
 }
 
 h2 {
-	font-size: 225%;
+    font-size: 225%;
 }
 
 h2,h3,h4 {
-	color: #ab601d;
-	margin-bottom: 7%;
+    color: #ab601d;
+    margin-bottom: 7%;
 }
 
 h3 {
-	font-size: 150%;
+    font-size: 150%;
 }
 
 h4 {
-	font-size: 125%;
+    font-size: 125%;
 }
 
 img.alignleft {
-	margin: 31.25% 125% 125% 0;
-	float: left;
+    margin: 31.25% 125% 125% 0;
+    float: left;
 }
 
 img.aligntop {
-	margin: 31.25% 0 125% 0;
+    margin: 31.25% 0 125% 0;
 }
 
 .log {
@@ -87,38 +93,38 @@ img.aligntop {
     top:10%;
     z-index: 1;
     float:left;
-        
+
 }
 
 p {
-	margin-bottom: 15%;
-        
+    margin-bottom: 15%;
+
 }
 
 ul {
-	margin-bottom: 15%;
+    margin-bottom: 15%;
 }
 
 ul h4 {
-	margin-bottom: 0.35em;
+    margin-bottom: 0.35em;
 }
 
 .box {
-	overflow: hidden;
-	margin: 0 0 1% 0;
-        position:relative;
-        top:3%;
-        z-index: 10;
-        text-align: justify
+    overflow: hidden;
+    margin: 0 0 1% 0;
+    position:relative;
+    top:3%;
+    z-index: 10;
+    text-align: justify
 }
 
 #box{
     overflow: hidden;
-	margin: 0 0 1% 0;
-        position:relative;
-        top:3%;
-        z-index: 10;
-        text-align: justify
+    margin: 0 0 1% 0;
+    position:relative;
+    top:3%;
+    z-index: 10;
+    text-align: justify
 
 }
 
@@ -129,198 +135,277 @@ ul h4 {
 
 
 #content {
-        
-	padding: 5%;
-        padding-top: 15%;
-	width: 55%;
-	background: #EAEEF2 url(images/img05.jpg) top left repeat-x;
-	border-radius: 10px;
-	border: solid 2px #FFFFFF;
-	text-shadow: 0 1px 0 #FFFFFF;
-        text-align: justify;
-        position: relative;
-        z-index: 10;
+
+    padding: 5%;
+    padding-top: 15%;
+    width: 55%;
+    background: #EAEEF2 url(images/img05.jpg) top left repeat-x;
+    border-radius: 10px;
+    border: solid 2px #FFFFFF;
+    text-shadow: 0 1px 0 #FFFFFF;
+    text-align: justify;
+    position: relative;
+    z-index: 10;
 }
 
 #footer {
-	margin: 4% 0 auto 0;
-	text-align: center;
-	color: #626E7F;
-	text-shadow: 0 1px 0 #FFFFFF;
+    margin: 4% 0 auto 0;
+    text-align: center;
+    color: #626E7F;
+    text-shadow: 0 1px 0 #FFFFFF;
 }
 
 #footer a {
-	color: #626E7F;
+    color: #626E7F;
 }
 
 #header {
-	background: #2C84AF url(images/img03.jpg) top left no-repeat ;
-        background-size: 100%;
-	color: #FFFFFF;
-	height: 100%;
-	position: relative;
-	border-radius: 10px;
-	border-top: solid 1px #96D0F7;
-	border-bottom: solid 1px #0C3459;
-        font-size: 80%;
-        z-index: 5;
+    background: #2C84AF url(images/img03.jpg) top left no-repeat ;
+    background-size: 100%;
+    color: #FFFFFF;
+    height: 100%;
+    position: relative;
+    border-radius: 10px;
+    border-top: solid 1px #96D0F7;
+    border-bottom: solid 1px #0C3459;
+    font-size: 80%;
+    z-index: 5;
+}
+#header2 {
+    background: #2C84AF url(images/img03.jpg) top left no-repeat ;
+    background-size: 100%;
+    color: #FFFFFF;
+    position: relative;
+    border-radius: 10px;
+    border-top: solid 1px #96D0F7;
+    border-bottom: solid 1px #0C3459;
+    font-size: 80%;
+    width:40em;
+    height:25em;
+    position: relative; 
+    z-index: 1;
+    left:46%; 
+    bottom: 20em
 }
 
 #logo {
-	top: 5%;
-	height: 14%;
-	position: absolute;
-	left: 5%;
-	line-height: 14%;
+    text-align: center;
+    position:relative;
+    left: 30%;
+    width: 30em
+}
+
+#logoini{
+    z-index: 100; 
+    top:7em;
+    left:5%;
+    position:relative;
+    width: 30em
 }
 
 #logo a {
-	text-decoration: none;
-	color: #FFFFFF;
+    text-decoration: none;
+    color: #FFFFFF;
 }
 
 #logo h1 {
-	font-size: 50%;
-	text-shadow: 0 2px 2px #0E3E68;
+    font-size: 50%;
+    text-shadow: 0 2px 2px #0E3E68;
 }
 
 #truck {
-       
-        float:right;
-        height:20%;
-        width:20%
-        
+
+    float:right;
+    height:20%;
+    width:20%
+
 }
 #truck2 {
     left: 20%;
     position:relative;
     height:20%;
     width:20%
-        
-        
+
+
 }
-        
+
 #menu {
-	position: relative;
-	line-height: 10%;
-        text-align: right;
-        width:99%;
-        padding: 1%;
-        height: 1em;
-        z-index: 10;
-        right:1%
+    position: relative;
+    line-height: 10%;
+    text-align: right;
+    width:99%;
+    padding: 1%;
+    height: 1em;
+    z-index: 10;
+    right:1%
 }
 
 #menu a {
-	
-	color: #FFFFFF;
-	font-size: 130%;
+
+    color: #FFFFFF;
+    font-size: 130%;
 }
 
 #menu ul {
-	list-style: none;
-        width: 100%;
-        height:100%;
-        
+    list-style: none;
+    width: 100%;
+    height:100%;
+
+}
+#menu ul a:hover{
+    color:orange;
+
 }
 
 #menu ul li {
-	padding: 3%;
-	display: inline;
-	text-shadow: 0 1px 1px #0E3E68;
+    padding: 3%;
+    display: inline;
+    text-shadow: 0 1px 1px #0E3E68;
 }
 
 #menu ul li.current_page_item {
-	background: #56AFD8 url(images/img04.jpg) top left no-repeat;
-	border-top: solid 1px #82D9ED;
-	border-bottom: solid 1px #24627C;
-	border-radius: 5px;
+    background: #56AFD8 url(images/img04.jpg) top left no-repeat;
+    border-top: solid 1px #82D9ED;
+    border-bottom: solid 1px #24627C;
+    border-radius: 5px;
 }
 
 #menu ul li.last {
-	padding-right: 0%;
+    padding-right: 0%;
 }
 
 #page {
-	position: relative;
-	margin: 2% 0 2% 0;
-        right:26%;
-	width: 100%;
-        z-index: 10;
-        left:0%;
-        
-            
+    position: relative;
+    margin: 2% 0 2% 0;
+    right:26%;
+    width: 100%;
+    z-index: 10;
+    left:0%;
+
+
 }
 
 #page .section-list {
-	padding-left: 0;
-	list-style: none;
+    padding-left: 0;
+    list-style: none;
 }
 
 #page .section-list li {
-	clear: both;
-	padding: 25% 0 25% 0;
+    clear: both;
+    padding: 25% 0 25% 0;
 }
 
 #page ul {
-	list-style: none;
+    list-style: none;
 }
 
 #page ul li {
-	padding: 2% 0 2% 0;
-	border-top: dotted 1px #C5CDD8;
+    padding: 2% 0 2% 0;
+    border-top: dotted 1px #C5CDD8;
 }
 
 #page ul li.first {
-	padding-top: 0;
-	border-top: 0;
+    padding-top: 0;
+    border-top: 0;
 }
 
 #search input.form-submit {
-	background: #B87A23;
-	padding: 2%;
-	color: #FFFFFF;
-	border: 0;
-	margin-left: 1em;
+    background: #B87A23;
+    padding: 2%;
+    color: #FFFFFF;
+    border: 0;
+    margin-left: 1em;
 }
 
 #search input.form-text {
-	padding: 10px;
-	border: dotted 1px #569DBF;
+    padding: 10px;
+    border: dotted 1px #569DBF;
 }
 
 #sidebar {
-	background: #EAEEF2 url(images/img05.jpg) top left repeat-x;
-	padding: 2%;
-	border-radius: 10px;
-	text-shadow: 0 1px 0 #FFFFFF;
-        height: 100%;
-        left:50%;
-        width: 30%;
-        float:right;
+    background: #EAEEF2 url(images/img05.jpg) top left repeat-x;
+    padding: 2%;
+    border-radius: 10px;
+    text-shadow: 0 1px 0 #FFFFFF;
+    height: 100%;
+    left:50%;
+    width: 30%;
+    float:right;
 }
 
 #sidebar ul {
-	list-style: none;
+    list-style: none;
 }
 
 #sidebar ul li {
-	padding: 10.8% 0 10.8% 0;
-	border-top: dotted 1px #C5CDD8;
+    padding: 10.8% 0 10.8% 0;
+    border-top: dotted 1px #C5CDD8;
 }
 
 #sidebar ul li.first {
-	border-top: 0;
-	padding-top: 0;
+    border-top: 0;
+    padding-top: 0;
 }
 
 #wrapper {
-        position:relative;
-        top:1%;
-	margin: 0 auto 0 auto;
-	padding: 6% 0 0 0;
-	width: 72.5%;
-        z-index: 1;
+    position:relative;
+    top:1%;
+    margin: 0 auto 0 auto;
+    padding: 6% 0 0 0;
+    width: 72.5%;
+    z-index: 1;
+}
+
+.inisesion{
+    z-index: 50;
+    position:relative;
+    left: 10%;
+    top:4em;
+    width: 30em
+    
+    
+}
+
+#inisesion2{
+    float:left; width: 25%; height: 20em;  position: relative; left:10%;top:3em
+}
+input { 
+    border-radius: 5px;
+    width:210px;
+    height:25px;
+    border: 2px solid #C0C0C0;
+} 
+
+input:focus { border: 2px solid #800000; 
+              background-color:#FF8080}
+
+
+#menuhoriz img:hover {
+    cursor: pointer; /* cambiar el aspecto del puntero */
+
+    background-color:#E4E4E4; /* Color de fondo */
+}
+#menuhoriz{
+    /* Linea para delimitar la botonera */
+
+    z-index: 50;
+    margin-right: 14%;
+    top: 2%;
+    position:absolute;
+    width:50%;
+    left:42%;
+
+
+
+}
+
+.icon{
+    width: 4em;
+    height: 4em;
+    margin-left: 8%;
+    position:relative;
+    float:left;
+
 }
 
 /*Implementacion Responsive Web Design*/
@@ -328,21 +413,25 @@ ul h4 {
     body{
         font-size: 1em;
     }
-    
+
 }
 
 @media screen and (max-width:860px){
-    
-    
+
+
     #truck , #truck2{
         height: 9em;
         width: 10em
     }
-    
+
     #header{
         height: 9em
     }
-    
+
+    #header2{
+        left:5%
+        
+    }
     #menu{
         font-size: 130%;
         width: 115%;
@@ -350,58 +439,82 @@ ul h4 {
         top:127%;
         position:absolute;
         z-index: 11;
-      }
-      #menu li{
-          position: relative;
-          z-index: 11;
-      }
-      
-      #page{
-          top:2em;
-          margin-bottom: 4em
-      }
-      
-      .log{
-          z-index: 1
-      }
-      
-      #content{
-          width:90%;
-          float:left;
-      }
-      
-      #sidebar {
-          width:96%;
-          height: 4em;
-          margin: 0 0 4% 0;
-          padding: 0 2% 0 2%;
-          background-color: #FE9A2E;
-          background-image: none;
-          padding-bottom: 3em
-              
-              
-      }
-      
-      #box{
-          display:none;
-      }
-      #box2{
-          text-align: center;
-          display: inline;
-          text-decoration-color: black;
-          background-color: #FE9A2E;
-          margin-bottom: 1em;
-          
-      }
-      
+    }
+    #menu li{
+        position: relative;
+        z-index: 11;
+    }
+
+    #page{
+        top:4em;
+        margin-bottom: 4em
+    }
+
+    .log{
+        z-index: 1
+    }
+
+    #content{
+        width:90%;
+        float:left;
+    }
+
+    #sidebar {
+        width:96%;
+        height: 4em;
+        margin: 0 0 4% 0;
+        padding: 0 2% 0 2%;
+        background-color: #FE9A2E;
+        background-image: none;
+        padding-bottom: 3em
+
+
+    }
+
+    #box{
+        display:none;
+    }
+    #box2{
+        text-align: center;
+        display: inline;
+        text-decoration-color: black;
+        background-color: #FE9A2E;
+        margin-bottom: 1em;
+
+    }
+
+    #menuhoriz{
+
+
+        position:absolute;
+        width:90%;
+        left:5%;
+        z-index: 50;
+        top: 13em;
+            
         
+ }
+ 
+ .icon{
+     margin-left: 9%;
+ }
+ 
+ #header2{
+     bottom: 5em
+ }
+
+ #logoini{
+     bottom:40em;
+     top:0em;
+ }
 }
-    
-    
-    
+
+
+
 
 
 @media screen and (max-width: 480px){
+
     
     
 }
