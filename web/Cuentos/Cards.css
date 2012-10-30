@@ -1,0 +1,216 @@
+/* 
+    Document   : Cards
+    Created on : 29/10/2012, 04:41:13 AM
+    Author     : Mely
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+<!--
+	a.degradar { 	
+	background: #f3e2c7; /* Old browsers */
+    background: -moz-linear-gradient(top, #f3e2c7 0%, #e29f51 50%, #e29f51 51%, #e8cdb2 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f3e2c7), color-stop(50%,#e29f51), color-stop(51%,#e29f51), color-stop(100%,#e8cdb2)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #f3e2c7 0%,#e29f51 50%,#e29f51 51%,#e8cdb2 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #f3e2c7 0%,#e29f51 50%,#e29f51 51%,#e8cdb2 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #f3e2c7 0%,#e29f51 50%,#e29f51 51%,#e8cdb2 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #f3e2c7 0%,#e29f51 50%,#e29f51 51%,#e8cdb2 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3e2c7', endColorstr='#e8cdb2',GradientType=0 ); /* IE6-9 */
+    margin: auto;
+	padding:30px 60px;
+	text-align: center;
+	width:35px;
+	height:20px;
+	border-radius:10px;
+	position: absolute;
+	top:360%;
+    left:30%;
+    right:30%;
+    bottom:10%;
+	font-family:BonvenoCF,Verdana, Arial, sans-serif;
+	font-size:15px;
+	font-color:#27457C;
+	cursor:pointer;
+	
+}
+
+/* Definición de fuentes(Letra) nuevas */
+
+@font-face {
+  font-family: 'KulminoituvaRegular';
+  src: url('Fuentes/kulminoituva/Kulminoituva.eot');
+  src: local('Kulminoituva Regular'), local('Kulminoituva'), url('Fuentes/kulminoituva/kulminoituva.woff') format('woff'), url('Fuentes/kulminoituva/kulminoituva.ttf') format('truetype'), url('Fuentes/kulminoituva/kulminoituva.svg#Kulminoituva') format('svg');
+}
+
+@font-face {
+  font-family: 'BonvenoCF';
+  src: url('Fuentes/BonvenoCF/BonvenoCF.eot');
+  src: local('BonvenoCF'), local('BonvenoCF'), url('Fuentes/BonvenoCF/BonvenoCF.woff') format('woff'), url('Fuentes/BonvenoCF/BonvenoCF.ttf') format('truetype'), url('Fuentes/BonvenoCF/BonvenoCF.svg#Notethis') format('svg');
+}
+
+@font-face {
+  font-family: 'Tiza';
+  src: url('Fuentes/Tiza/Tiza.eot');
+  src: local('Tiza'), local('Tiza'), url('Fuentes/Tiza/Tiza.woff') format('woff'), url('Fuentes/Tiza/Tiza.ttf') format('truetype'), url('Fuentes/Tiza/Tiza.svg#Notethis') format('svg');
+}
+
+@font-face {
+  font-family: 'Brankovic';
+  src: url('Fuentes/Brankovic/Brankovic.eot');
+  src: local('Brankovic'), local('Brankivic'), url('Fuentes/Brankovic/Brankovic.woff') format('woff'), url('Fuentes/Brankovic/Brankovic.ttf') format('truetype'), url('Fuentes/Brankovic/Brankovic.svg#Notethis') format('svg');
+}
+
+
+/* Estilo General */
+
+body {
+    background: url(../images/fondo.png) fixed;
+    background-size: 100% 100%;
+    color: #6B7C93;
+    font-size: 130%;
+
+}
+h2 {
+  font-family: Tiza, "Arial Black", Gadget, sans-serif;
+  color: #01A9DB;
+  position:relative;
+      width: 70%;
+}
+
+p.alt{
+  font-family: Brankovic , "Arial Black", Gadget, sans-serif;
+  color: #867531;
+  font-size:20px;
+  position:absolute;
+  text-align:left;
+  top:130%;
+  left:15%;
+  right:15%;
+  bottom:30%;
+}
+
+ h3, h5, h6 {
+  font-family: KulminoituvaRegular, "Arial Black", Gadget, sans-serif;
+  color: #08088A;
+  font-size:37px;
+   
+}
+
+
+#wrapper {
+  width:1100px;
+  margin:0 auto;
+  text-align:center;
+  padding-top:2px;
+}
+
+/* Estilo de las Tarjetas */
+  
+ul#index_cards {
+  margin-top:50px;
+  text-align:center;
+  padding-top: 10em;
+}
+  
+ul#index_cards li {
+  background:#DED2A5 repeat;
+  height:450px;
+  width:200px;
+  display:block;
+  float:left;
+  border:1px solid #666;
+  padding:25px 10px;
+  position:relative;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-box-shadow: 2px 2px 8px  #28467D;
+  -webkit-box-shadow: 2px 2px 8px  #28467D;
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+}
+
+/*Estilo de cada tarjeta*/
+#card-1 {
+  -webkit-transform: rotate(10deg);
+  -moz-transform: rotate(10deg);
+  z-index:1;
+  left:0;
+  top:10px;
+}
+  
+#card-2 {
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  z-index:2;
+  left:50px;
+  top:10px;
+}
+  
+#card-3 {
+ -webkit-transform: rotate(10deg);
+  -moz-transform: rotate(10deg);
+  z-index:2;
+  right:50px;
+  left:80px;
+  top:10px;
+}
+  
+#card-4 {
+   -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  z-index:1;
+  right:0px;
+  left:120px;
+  top:10px;
+}
+  
+
+
+/* EStados de etiqueta Hover */
+  
+ul#index_cards li:hover {
+  z-index:4;
+}
+  
+#card-1:hover {
+  -moz-transform: scale(1.2) rotate(0deg);
+     -webkit-transform: scale(1.2) rotate(0deg); 
+}
+    
+#card-2:hover {
+  -moz-transform: scale(1.2) rotate(0deg);
+   -webkit-transform: scale(1.2) rotate(0deg); 
+}
+  
+#card-3:hover {
+  -moz-transform: scale(1.2) rotate(0deg);
+   -webkit-transform: scale(1.2) rotate(0deg); 
+}
+  
+#card-4:hover {
+  -moz-transform: scale(1.2) rotate(0deg);
+   -webkit-transform: scale(1.2) rotate(0deg); 
+}
+  
+
+
+/* estilo del contenido */
+  
+ul#index_cards li img {
+  margin-top:3px;
+  background:#eee;
+  -moz-border-radius: 5px; /*Mozilla*/
+  -webkit-border-radius: 5px; /*Chrome*/
+  -moz-box-shadow: 2px 2px 8px 5px #545E20;
+  -webkit-box-shadow: 2px 2px 8px 5px #545E20;
+}
+      
+ul#index_cards li p {
+  margin-top:4px;
+  text-align:left;
+  line-height:28px;  
+}
+    -->

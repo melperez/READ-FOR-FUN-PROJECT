@@ -7,7 +7,12 @@ Author     : Mely
 <!DOCTYPE html>
 <div id="content">
     <div class="box">
-        En costruccion...
+        <ul>
+            <li><a href="ControladorPages?accion=modJuegos&nivel=1">Nivel 1</a></li>
+            <li><a href="ControladorPages?accion=modJuegos&nivel=2">Nivel 2</a></li>
+            <li><a href="ControladorPages?accion=modJuegos&nivel=3">Nivel 3</a>
+            </li>
+        </ul>
     </div>
     <div class="box">
 

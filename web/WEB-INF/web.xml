@@ -4,9 +4,25 @@
         <servlet-name>ControladorPages</servlet-name>
         <servlet-class>ControladorPages</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ValidacionIngreso</servlet-name>
+        <servlet-class>ValidacionIngreso</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>UserControler</servlet-name>
+        <servlet-class>UserControler</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ControladorPages</servlet-name>
         <url-pattern>/ControladorPages</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ValidacionIngreso</servlet-name>
+        <url-pattern>/ValidarIngreso</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UserControler</servlet-name>
+        <url-pattern>/UserControler</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

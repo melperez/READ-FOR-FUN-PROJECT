@@ -30,11 +30,11 @@
         <div id="titulo" style="font-family:BonvenoCF, Arial, sans-serif; font-size:15px;  text-shadow:none; padding-top:0px">
             <div class="fondo" id="b2" style=" padding:10%; font-family:BonvenoCF, Arial, sans-serif; font-size:15px; width: 29em; height:50em; text-shadow:none; padding-top:3px">
                 
-                <form action="Controlar" method="POST" id="signupForm" target="_top" style="color: black; text-align:justify; text-shadow:2px 2px 2px #646464">
+                <form action="UserControler" method="POST" id="signupForm" target="_top" style="color: black; text-align:justify; text-shadow:2px 2px 2px #646464">
                    
                     <P>
                        <label for="Nick">Nickname: </label><br/>
-                        <input id="Nick" class="required"  type="text" name="Nick" placeholder="Nick" minlength="2"  style="width:400px;height:20px;"/> 
+                        <input id="Nick" class="required"  type="text" name="nick" placeholder="Nick" minlength="2"  style="width:400px;height:20px;"/> 
                     </P>
                     <p>
                         <label for="firstname">Nombre: </label><br/>
@@ -50,7 +50,7 @@
                     </p>
                     <p>
                         <label for="firstname">Nombre Acudiente: </label><br/>
-                        <input id="Nomacudi" class="required"  type="text" name="firstname" placeholder="Nombre" minlength="2"  style="width:400px;height:20px;"/>
+                        <input id="Nomacudi" class="required"  type="text" name="firstname2" placeholder="Nombre" minlength="2"  style="width:400px;height:20px;"/>
                     </p>
                     <p>
                         <label for="password">Contrase&ntildea: </label>
@@ -87,7 +87,7 @@
                     
                     <p>
                         <label for="firstname">PIN: </label><br/>
-                        <input id="cod" class="required"  type="text" name="firstname" placeholder="Nombre" minlength="2"  style="width:400px;height:20px;"/>
+                        <input id="cod" class="required"  type="text" name="pin" placeholder="Nombre" minlength="2"  style="width:400px;height:20px;"/>
                     </p>
                     <p>
                     <input id="Registrate" class="ui-state-default ui-corner-all" style="width: 92%; height:5em; cursor: pointer; font-size: 150%" type="submit" value="Registrate" />
